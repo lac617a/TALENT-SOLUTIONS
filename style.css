@@ -1,0 +1,99 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #FDFDFD;
+  font-family: 'Montserrat', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: 300ms;
+}
+a:hover {
+  color: #E18E15 !important;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button, input {
+  border: none;
+  outline: none;
+}
+
+/* ============ HEADER ============ */
+
+.ts-header-info {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  border-bottom: 1px solid #C5C5C5;
+}
+
+.ts-header-info .ts-header-info-clear {
+  display: inline-flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ts-header-info .ts-header-info-clear > span, .ts-header-info .ts-header-info-clear > a {
+  display: inline-flex;
+  gap: 8px;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #262626;
+}
+.ts-header-into {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 2rem 0 1rem;
+}
+
+.ts-header-into .ts-header-logo {
+  width: 200px;
+  object-fit: contain;
+}
+
+.ts-header-navbar {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.ts-header-nav {
+  display: flex;
+  gap: 2rem;
+}
+
+.ts-header-item a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #575759;
+}
+
+.ts-header-button {
+  background: #E18E15;
+  padding: 14px;
+  width: 200px;
+
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 19px;
+  color: #FDFDFD;
+}
+
+/* ============ END-HEADER ============ */
