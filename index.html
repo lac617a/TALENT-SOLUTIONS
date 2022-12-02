@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Talent Solutions es una empresa que provee Soluciones Internacionales para Marketing, Ventas & Experiencia, con la Misión de ayudar a las Organizaciones a Adquirir, Retener y Satisfacer Clientes y Canales.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -11,6 +12,7 @@
     <title>TALENT SOLUTIONS</title>
   </head>
   <body>
+    <!-- HEADER -->
     <header class="ts-wrap-header">
       <div class="ts-header-info">
         <div class="ts-header-info-clear">
@@ -33,7 +35,10 @@
         </div>
       </div>
       <div class="ts-header-into">
-        <img class="ts-header-logo" src="./img/logo.png" alt="LOGO-TALENT-SOLUTIONS">
+        <img
+          src="./img/logo.png"
+          class="ts-logo"
+          alt="LOGO-TALENT-SOLUTIONS">
         <nav class="ts-header-navbar">
           <ul class="ts-header-nav">
             <li class="ts-header-item">
@@ -56,5 +61,80 @@
         </nav>
       </div>
     </header>
+    <!-- END-HEADER -->
+
+
+
+    <!-- MAIN -->
+    <div class="ts-hero">
+      <img src="./img/img-into.png" alt="img-hero">
+      <div>
+        <h1>Talentos sin fronteras para incrementar tus resultados.</h1>
+      </div>
+    </div>
+    <main>
+      <template>
+        <article class="ts-article">
+          <section class="ts-section"></section>
+          <section class="ts-section"></section>
+        </article>
+      </template>
+
+      <article class="ts-article-form">
+        <h2>¿Quiere saber más?</h2>
+        <form class="ts-form">
+          <div class="ts-form-field">
+            <label for="firstName">Nombre*</label>
+            <input placeholder="Nombre" type="text" id="firstName">
+          </div>
+          <div class="ts-form-field">
+            <label for="lastName">Apellido*</label>
+            <input placeholder="Apellido" type="text" id="lastName">
+          </div>
+          <div class="ts-form-field">
+            <label for="emailBusiness">Correo Empresarial</label>
+            <input placeholder="Correo Empresarial" type="text" id="emailBusiness">
+          </div>
+          <div class="ts-form-field">
+            <label for="whatsapp">Whatsapp*</label>
+            <input placeholder="Whatsapp" type="text" id="whatsapp">
+          </div>
+          <div class="ts-form-field">
+            <label for="message">Mensaje*</label>
+            <textarea
+              rows="4"
+              id="message"
+              placeholder="¿Cómo podemos ayudarte?"></textarea>
+          </div>
+          <div class="ts-form-field">
+            <button type="submit">Enviar</button>
+          </div>
+        </form>
+      </article>
+    </main>
+    <!-- END-MAIN -->
+
+
+
+    <!-- FOOTER -->
+    <footer class="ts-footer">
+      <div>
+        <img
+          src="./img/logo.png"
+          class="ts-logo"
+          alt="LOGO-TALENT-SOLUTIONS"
+        />
+        <div>
+          <h3>¿Quienes somos?</h3>
+          <p>Talent Solutions es una empresa que provee Soluciones Internacionales para Marketing, Ventas & Experiencia, con la Misión de ayudar a las Organizaciones a Adquirir, Retener y Satisfacer Clientes y Canales.
+          </p>
+        </div>
+      </div>
+      <div class="ts-footer-wrap-copyright">
+        <p>COPYRIGHT © TALENT SOLUTIONS</p>
+      </div>
+    </footer>
+    <!-- END-FOOTER -->
   </body>
+  <script src="index.js"></script>
 </html>

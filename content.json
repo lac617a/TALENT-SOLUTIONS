@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "title": "Equipos de Customer & Partner Success",
+    "content": "Las empresas cuyos talentos ponen el foco de su atención en la experiencia exitosa de sus clientes y partners logran mayores resultados de venta y un alto volumen de fidelización.<br/><br/>Si quieres que ellos te elijan por este gran diferencial, cuenta con nosotros para que armemos el mejor equipo de Customer & Partner Success. Desde la selección de personal idóneo, altamente motivado y comprometido con los valores de tu organización, hasta la capacitación constante y evaluaciones periódicas que aseguran excelentes niveles de desempeño.<br/><br/>Deja que la increíble atención al cliente de tu empresa, conformada por agentes independientes, preparados y dispuestos a entregar valor en cada contacto, hable por sí misma.",
+    "button": "¡Quiero más información!",
+    "img": "./img/img-content-1.png"
+  },
+  {
+    "id": 2,
+    "title": "Equipos de Digital Sales Reps, Social Sellers & Demand Generators",
+    "content": "¿Sabías que una persona requiere siete contactos, en promedio, antes de efectuar una compra?<br/><br/>Con excepción de las ventas impulsivas, la mayor parte de los consumidores prefiere adquirir servicios y productos de empresas en las que confía, con las cuales ha construido un vínculo emocional. Lo mejor de todo es que, si su experiencia es satisfactoria, la tasa de retención es alta.<br/><br/>Generar una relación a mediano y largo plazo con tus clientes potenciales y actuales es lo que otorgará grandes beneficios a tu organización ¡Déjanos hacerlo por ti!<br/><br/>Construimos equipos on-demand para atraer, satisfacer y retener clientes.<br/><br/>Ya puedes olvidarte de tareas como la obtención de contactos, creación de base de datos y generación de engagement. <span>Talent Solutions</span> lo hace todo, hasta la negociación, ventas y seguimiento.<br/><br/>Solicita información ahora mismo y eleva tu marca.",
+    "button": "¡Quiero más información sobre estas soluciones!",
+    "img": "./img/img-content-2.png"
+  },
+  {
+    "id": 3,
+    "title": "Equipos de System Engineers & Services Support",
+    "content": "En la actualidad, los negocios están virando de forma inminente hacia la digitalización. La adopción de metodologías ágiles y tecnologías novedosas permite trabajar en un modo más eficiente, productivo y seguro.<br/><br/>Aunque, muchas veces, los sistemas utilizados por las organizaciones son demasiado complejos y requieren soporte brindado por especialistas con experiencia que entiendan a la perfección las necesidades de la organización.<br/><br/>¿Cuentas con equipos especializados en el área de Soporte e Ingeniería en Sistemas? Si la respuesta es no, implica que podrías estar usando este tiempo para mejorar otros puntos de tu negocio y satisfaciendo a tus clientes nuevos o actuales.<br/><br/><span>Talent Solutions</span> pone a tu disposición equipos integrados y sólidos, que responden rápida y efectivamente a las necesidades de tu organización, generando soluciones innovadoras con un diseño holístico de sistemas, evaluando los procesos durante todo su ciclo verificando que cumplan y superen las expectativas, antes, durante y después de su implementación.<br/><br/>",
+    "button": "¡Quiero más información sobre estas soluciones!",
+    "img": "./img/img-content-3.png"
+  },
+  {
+    "id": 4,
+    "title": "Equipos de Back Office & Operaciones",
+    "content": "Contrata los colaboradores ideales para tu empresa, dispuestos a representarla como si fuera propia -sin importar su ubicación geográfica- de una forma sencilla, probada y libre de riesgos.<br/><br/>Llevamos a cabo el proceso de selección basándonos en las necesidades de tu empresa, escogiendo a las personas más idóneas y compatibles con los valores que buscas.<br/><br/>Contamos con una exclusiva reserva de profesionales calificados -quienes actualizan sus conocimientos día a día- en permanente expansión.<br/><br/>Reduce tus costos y tiempos de contratación, amplía tu infraestructura y rompe las barreras físicas. Confía en Talent Solutions para un servicio de excelencia.",
+    "button": "¡Quiero más información!",
+    "img": "./img/img-content-4.png"
+  }
+]

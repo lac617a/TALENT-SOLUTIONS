@@ -26,7 +26,7 @@ button {
   cursor: pointer;
 }
 
-button, input {
+button, input, textarea {
   border: none;
   outline: none;
 }
@@ -59,10 +59,10 @@ button, input {
   align-items: center;
   justify-content: space-between;
 
-  padding: 0 2rem 0 1rem;
+  padding: 10px 2rem;
 }
 
-.ts-header-into .ts-header-logo {
+.ts-logo {
   width: 200px;
   object-fit: contain;
 }
@@ -94,6 +94,234 @@ button, input {
   font-size: 16px;
   line-height: 19px;
   color: #FDFDFD;
+  transition: 300ms;
+}
+
+.ts-header-button:hover {
+  border: 1px solid #E18E15;
+  background: transparent;
+  color: #E18E15;
 }
 
 /* ============ END-HEADER ============ */
+
+
+
+
+
+
+/* ============ MAIN ============ */
+
+.ts-hero {
+  position: relative;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+}
+
+.ts-hero img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+
+  object-fit: cover;
+  z-index: -1;
+}
+
+.ts-hero > div {
+  position: absolute;
+  inset: 0 0 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.ts-hero h1 {
+  max-width: 1123px;
+
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 48px;
+  text-align: center;
+
+  color: #FDFDFD;
+}
+
+
+main {
+  max-width: 1300px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.ts-article {
+  display: flex;
+  flex: 1 1;
+  padding: 5rem 3rem;
+  gap: 20px;
+}
+
+.ts-article .ts-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1 1;
+}
+
+.ts-article .ts-section p {
+  margin: 20px 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  letter-spacing: 0.04em;
+}
+
+.ts-article .ts-section p, .ts-article .ts-section h2 {
+  color: #262626;
+}
+.ts-article .ts-section h2 {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+}
+.ts-article .ts-section img {
+  width: 100%;
+  min-height: 300px;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: 300ms;
+}
+.ts-article .ts-section img.is-left {
+  transform: translateX(100px);
+}
+.ts-article .ts-section img.is-right {
+  transform: translateX(-100px);
+}
+
+.ts-article .ts-section img.is-animate-left, .ts-article .ts-section img.is-animate-right {
+  opacity: 1;
+  transform: translateX(0px);
+}
+
+.ts-article .ts-section button {
+  max-width: 400px;
+  width: 100%;
+  padding: 14.5px;
+
+  color: #FDFDFD;
+  background: #262626;
+
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+
+  opacity: 0;
+  transform: translateY(100px);
+  transition: 300ms;
+}
+
+.ts-article .ts-section button.is-animate {
+  opacity: 1;
+  transform: translateY(0px);
+}
+
+.ts-article-form {
+  margin: 3rem 0;
+}
+
+.ts-article-form h2 {
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.ts-form {
+  max-width: 500px;
+  margin: 0 auto;
+}
+.ts-form-field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+.ts-form-field label {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  color: #262626;
+}
+
+.ts-form-field input, .ts-form-field  textarea {
+  padding: 10px;
+  border-bottom: 1px solid #57575990;
+
+  font-size: 14px;
+  line-height: 17px;
+  color: #57575990;
+  transition: 300ms;
+}
+.ts-form-field input:hover, .ts-form-field  textarea:hover {
+  border-bottom: 1px solid #262626;
+}
+
+.ts-form-field button {
+  padding: 12px;
+  width: 150px;
+  color: #FDFDFD;
+  background-color: #262626;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
+  align-self: center;
+}
+/* ============ END-MAIN ============ */
+
+
+
+
+
+
+
+
+
+/* ============ FOOTER ============ */
+.ts-footer {
+  background: #2E2E2E;
+  color: #FDFDFD;
+}
+
+.ts-footer > div:not(.ts-footer-wrap-copyright) {
+  display: flex;
+  padding: 5rem;
+  justify-content: space-between;
+}
+.ts-footer > div:not(.ts-footer-wrap-copyright) h3 {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  margin-bottom: 20px;
+}
+.ts-footer > div:not(.ts-footer-wrap-copyright) p {
+  max-width: 600px;
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.ts-footer-wrap-copyright {
+  background: #262626;
+  padding: 20px 0 50px 0;
+}
+
+.ts-footer-wrap-copyright p {
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+/* ============ END-FOOTER ============ */
+
+
+/* ============ RESPONSIVE ============ */
+
+/* ============ END-RESPONSIVE ============ */
