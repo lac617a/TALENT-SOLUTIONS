@@ -55,6 +55,7 @@ button, input, textarea {
   color: #262626;
 }
 .ts-header-into {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -71,6 +72,7 @@ button, input, textarea {
   display: flex;
   align-items: center;
   gap: 2rem;
+  background: #FDFDFD;
 }
 
 .ts-header-nav {
@@ -138,10 +140,10 @@ button, input, textarea {
 
 .ts-hero h1 {
   max-width: 1123px;
-
+  font-family: 'Raleway';
   font-weight: 700;
-  font-size: 40px;
-  line-height: 48px;
+  font-size: 48px;
+  line-height: 56px;
   text-align: center;
 
   color: #FDFDFD;
@@ -322,6 +324,207 @@ main {
 /* ============ END-FOOTER ============ */
 
 
+/* MENU ANIMATED */
+.ts-menu-btn {
+  position: relative;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  width: 22px;
+  height: 20px;
+  background-color: transparent;
+  box-shadow: none !important;
+  transition: 300ms;
+}
+.ts-menu-btn.open .ts-menu-btn__burger {
+  transform: translateX(-50px);
+  background-color: transparent;
+}
+.ts-menu-btn.open .ts-menu-btn__burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+.ts-menu-btn.open .ts-menu-btn__burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+.ts-menu-btn .ts-menu-btn__burger {
+  width: 22px;
+  height: 2px;
+  background-color: #E18E15;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.ts-menu-btn .ts-menu-btn__burger::before,
+.ts-menu-btn .ts-menu-btn__burger::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 22px;
+  height: 2px;
+  background-color: #E18E15;
+  border-radius: 5px;
+  transition: 0.5s;
+}
+
+.ts-menu-btn .ts-menu-btn__burger::before {
+  transform: translateY(-7px);
+}
+.ts-menu-btn .ts-menu-btn__burger::after {
+  transform: translateY(7px);
+}
+
+/* END-MENU ANIMATED */
+
+
 /* ============ RESPONSIVE ============ */
 
+@media only screen and (max-width: 768px) {
+  /* ============ HEADER ============ */
+  .ts-header-info .ts-header-info-clear > a {
+    display: none;
+  }
+  .ts-header-info .ts-header-info-clear > span {
+    font-size: 12px;
+  }
+
+  .ts-header-navbar {
+    position: absolute;
+    align-items: flex-start;
+    flex-direction: column;
+    top: 54px;
+    left: 0;
+    right: 0;
+    z-index: 1;
+
+    overflow: hidden;
+    clip-path: circle(30% at 100% -100%);
+    will-change: clip-path;
+    transition: clip-path 300ms;
+    box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.5);
+  }
+  .ts-header-navbar.show {
+    clip-path: circle(100% at 50% 50%);
+  }
+  .ts-header-nav {
+    flex-direction: column;
+    width: 100%;
+    gap: 0;
+  }
+  .ts-header-item a {
+    display: block;
+    padding: 10px 20px;
+    font-size: 12px;
+  }
+  .ts-header-item:hover {
+    background-color: #E18E15;
+  }
+  .ts-header-item:hover a {
+    color: #FDFDFD !important;
+  }
+  .ts-header-button {
+    display: none;
+  }
+  .ts-logo {
+    width: 120px;
+  }
+  .ts-menu-btn {
+    display: flex;
+  }
+
+  /* ============ END-HEADER ============ */
+
+  /* ============ MAIN ============ */
+  .ts-hero h1 {
+    font-size: 35px;
+  }
+  /* ============ END-MAIN ============ */
+
+  /* ============ FOOTER ============ */
+  .ts-footer > div {
+    gap: 3rem;
+  }
+  .ts-footer > div:not(.ts-footer-wrap-copyright) {
+    padding: 2rem;
+  }
+  .ts-footer > div:not(.ts-footer-wrap-copyright) h3 {
+    font-size: 14px;
+    line-height: 18px;
+  }
+  .ts-footer > div:not(.ts-footer-wrap-copyright) p {
+    font-size: 12px;
+    line-height: 22px;
+  }
+  
+  .ts-footer-wrap-copyright {
+    padding: 20px 0 30px 0;
+  }
+  
+  .ts-footer-wrap-copyright p {
+    font-size: 12px;
+    line-height: 14px;
+  }
+  /* ============ END-FOOTER ============ */
+
+
+}
+
 /* ============ END-RESPONSIVE ============ */
+
+
+@media only screen and (max-width: 480px) {
+  .ts-header-navbar {
+    clip-path: circle(50% at 100% -100%);
+  }
+
+  /* ============ MAIN ============ */
+  .ts-hero h1 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+
+  .ts-article {
+    padding: 3rem 1rem;
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .ts-article .ts-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1 1;
+  }
+  
+  .ts-article .ts-section p {
+    margin: 20px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 160%;
+    letter-spacing: 0.04em;
+  }
+  
+  .ts-article .ts-section p, .ts-article .ts-section h2 {
+    color: #262626;
+  }
+  .ts-article .ts-section h2 {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+  }
+  .ts-article .ts-section img {
+    width: 100%;
+    min-height: 300px;
+    height: 100%;
+    object-fit: cover;
+  
+    opacity: 0;
+    transition: 300ms;
+  }
+
+  .ts-article-form {
+    margin: 3rem;
+  }
+  /* ============ END-MAIN ============ */
+}

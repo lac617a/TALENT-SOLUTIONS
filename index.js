@@ -1,4 +1,4 @@
-const handlePlainTable = (result) => {
+const handlePlainContent = (result) => {
   const main = document.querySelector('main');
   const form = document.querySelector('.ts-article-form')
   const fragment = document.createDocumentFragment();
@@ -19,14 +19,22 @@ const handlePlainTable = (result) => {
     img.src = image;
     img.alt = `${id}-${title}`;
     
-    if (id % 2 === 0) {
+    const resize = window.innerWidth;
+    if (resize >= 768) {
+      if (id % 2 === 0) {
+        img.setAttribute('dir', 'ltr');
+        img.classList.add('is-right');
+        ts_section.item(0).appendChild(img);
+        ts_section.item(1).append(h2, p, button);
+      } else {
+        img.setAttribute('dir', 'rtl');
+        img.classList.add('is-left');
+        ts_section.item(0).append(h2, p, button);
+        ts_section.item(1).appendChild(img);
+      }
+    } else {
       img.setAttribute('dir', 'ltr');
       img.classList.add('is-right');
-      ts_section.item(0).appendChild(img);
-      ts_section.item(1).append(h2, p, button);
-    } else {
-      img.setAttribute('dir', 'rtl');
-      img.classList.add('is-left');
       ts_section.item(0).append(h2, p, button);
       ts_section.item(1).appendChild(img);
     }
@@ -81,11 +89,25 @@ const animated = () => {
   });
 }
 
-document.addEventListener('DOMContentLoaded', () => {
+const handleData = () => {
   fetch('content.json')
-    .then(data =>
-      data.json().then(result => handlePlainTable(result))
-    )
-    .then(animated)
-    .catch(e => console.error(e));
+  .then(data =>
+    data.json().then(result => handlePlainContent(result))
+  )
+  .then(animated)
+  .catch(e => console.error(e));
+}
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  handleData();
+
+  const btnMenu = document.querySelector('.ts-menu-btn');
+  const headerNavbar = document.querySelector('.ts-header-navbar');
+  btnMenu.addEventListener('click', (e) => {
+    headerNavbar.classList.toggle('show');
+    btnMenu.classList.toggle('open');
+  })
 });
+
+window.addEventListener('resize', handleData);
