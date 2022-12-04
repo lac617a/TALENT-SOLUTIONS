@@ -104,10 +104,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const btnMenu = document.querySelector('.ts-menu-btn');
   const headerNavbar = document.querySelector('.ts-header-navbar');
-  btnMenu.addEventListener('click', (e) => {
+  btnMenu.addEventListener('click', () => {
     headerNavbar.classList.toggle('show');
     btnMenu.classList.toggle('open');
   })
 });
 
-window.addEventListener('resize', handleData);
