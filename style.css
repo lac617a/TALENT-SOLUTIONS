@@ -88,7 +88,7 @@ button, input, textarea {
 }
 
 .ts-header-button {
-  background: #E18E15;
+  background: #00B2F3;
   padding: 14px;
   width: 200px;
   text-align: center;
@@ -101,9 +101,9 @@ button, input, textarea {
 }
 
 .ts-header-button:hover {
-  border: 1px solid #E18E15;
+  border: 1px solid #00B2F3;
   background: transparent;
-  color: #E18E15;
+  color: #00B2F3 !important;
 }
 
 /* ============ END-HEADER ============ */
