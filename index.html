@@ -24,7 +24,8 @@
         <img
           src="./img/logo.png"
           class="ts-logo"
-          alt="LOGO-TALENT-SOLUTIONS">
+          alt="LOGO-TALENT-SOLUTIONS"
+        />
         <nav class="ts-header-navbar">
           <ul class="ts-header-nav">
             <li class="ts-header-item">
@@ -33,9 +34,6 @@
           </ul>
           <a href="#form" class="ts-header-button">Hablemos</a>
         </nav>
-        <button class="ts-menu-btn">
-          <div class="ts-menu-btn__burger"></div>
-        </button>
       </div>
     </header>
     <!-- END-HEADER -->
@@ -60,28 +58,54 @@
       <article class="ts-article-form" id="form">
         <section>
           <h2>¿Quiere saber más?</h2>
-          <form class="ts-form">
+          <form
+            method="POST"
+            class="ts-form"
+            name="contactform"
+            data-netlify= "true">
+            <input type="hidden" name="form-name" value="contactform" />
             <div class="ts-form-field">
-              <label for="firstName">Nombre*</label>
-              <input placeholder="Nombre" type="text" id="firstName">
+              <label for="form-firstName">Nombre*</label>
+              <input
+                type="text"
+                id="form-firstName"
+                name="form-firstName"
+                placeholder="Nombre"
+                >
             </div>
             <div class="ts-form-field">
-              <label for="lastName">Apellido*</label>
-              <input placeholder="Apellido" type="text" id="lastName">
+              <label for="form-lastName">Apellido*</label>
+              <input
+                type="text"
+                id="form-lastName"
+                name="form-lastName"
+                placeholder="Apellido"
+                >
             </div>
             <div class="ts-form-field">
-              <label for="emailBusiness">Correo Empresarial</label>
-              <input placeholder="Correo Empresarial" type="text" id="emailBusiness">
+              <label for="form-emailBusiness">Correo Empresarial</label>
+              <input
+                type="text"
+                id="form-emailBusiness"
+                name="form-emailBusiness"
+                placeholder="Correo Empresarial"
+                >
             </div>
             <div class="ts-form-field">
-              <label for="whatsapp">Whatsapp*</label>
-              <input placeholder="Whatsapp" type="text" id="whatsapp">
+              <label for="form-whatsapp">Whatsapp*</label>
+              <input
+                type="text"
+                id="form-whatsapp"
+                name="form-whatsapp"
+                placeholder="Whatsapp"
+                >
             </div>
             <div class="ts-form-field">
-              <label for="message">Mensaje*</label>
+              <label for="form-message">Mensaje*</label>
               <textarea
                 rows="4"
-                id="message"
+                id="form-message"
+                name="form-message"
                 placeholder="¿Cómo podemos ayudarte?"></textarea>
             </div>
             <div class="ts-form-field">
