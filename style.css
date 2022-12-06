@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #FDFDFD;
   font-family: 'Montserrat', sans-serif;
@@ -35,25 +39,21 @@ button, input, textarea {
 
 .ts-header-info {
   display: flex;
-  justify-content: space-between;
   padding: 1rem 2rem;
-  border-bottom: 1px solid #C5C5C5;
-}
-
-.ts-header-info .ts-header-info-clear {
-  display: inline-flex;
   align-items: center;
-  gap: 2rem;
-}
-
-.ts-header-info .ts-header-info-clear > span, .ts-header-info .ts-header-info-clear > a {
-  display: inline-flex;
   gap: 8px;
+
+  border-bottom: 1px solid #C5C5C5;
 
   font-size: 14px;
   line-height: 17px;
   color: #262626;
 }
+
+.ts-header-info i {
+  color: #E18E15;
+}
+
 .ts-header-into {
   position: relative;
   display: flex;
@@ -91,6 +91,7 @@ button, input, textarea {
   background: #E18E15;
   padding: 14px;
   width: 200px;
+  text-align: center;
 
   font-weight: 600;
   font-size: 16px;
@@ -207,16 +208,15 @@ main {
   transform: translateX(0px);
 }
 
-.ts-article .ts-section button {
-  max-width: 400px;
-  width: 100%;
+.ts-article .ts-section a {
+  width: max-content;
   padding: 14.5px;
 
   color: #FDFDFD;
   background: #262626;
 
-  font-size: 16px;
-  line-height: 19px;
+  font-size: 14px;
+  line-height: 18px;
   text-align: center;
 
   opacity: 0;
@@ -224,13 +224,18 @@ main {
   transition: 300ms;
 }
 
-.ts-article .ts-section button.is-animate {
+.ts-article .ts-section a.is-animate {
   opacity: 1;
   transform: translateY(0px);
 }
 
+
+
+
 .ts-article-form {
   margin: 3rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 }
 
 .ts-article-form h2 {
@@ -277,6 +282,47 @@ main {
   font-size: 14px;
   line-height: 19px;
   align-self: center;
+}
+
+.ts-section-slider {
+  position: relative;
+  background: url('./img/img-content-5.png') no-repeat center/cover;
+  color: #FDFDFD;
+}
+.ts-slider {
+  margin: 2rem;
+  padding: 1rem;
+  background-color: #2E2E2E66;
+  text-align: center;
+  height: 89%;
+}
+
+.ts-slider-title {
+  color: inherit;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.ts-slider-nav {
+  height: 100%;
+  display: flex;
+  gap: 3rem;
+  flex-direction: column;
+}
+
+
+.ts-slider-item {
+  color: inherit;
+  font-size: 16px;
+  font-weight: 400;
+}
+.ts-slider-item i {
+  font-size: 2.5em;
+  margin-bottom: 1rem;
+}
+.ts-slider-country {
+  font-size: 24px;
+  font-weight: 400;
 }
 /* ============ END-MAIN ============ */
 
@@ -439,6 +485,11 @@ main {
   .ts-hero h1 {
     font-size: 35px;
   }
+
+  .ts-article-form {
+    grid-template-columns: 1fr;
+  }
+  
   /* ============ END-MAIN ============ */
 
   /* ============ FOOTER ============ */
@@ -523,8 +574,11 @@ main {
     transition: 300ms;
   }
 
-  .ts-article-form {
+  .ts-form {
     margin: 3rem;
+  }
+  .ts-article .ts-section a {
+    width: 100%;
   }
   /* ============ END-MAIN ============ */
 }

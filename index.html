@@ -5,34 +5,20 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Talent Solutions es una empresa que provee Soluciones Internacionales para Marketing, Ventas & Experiencia, con la Misión de ayudar a las Organizaciones a Adquirir, Retener y Satisfacer Clientes y Canales.">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Raleway:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./img/logo-white.png" type="image/x-icon">
     <title>TALENT SOLUTIONS</title>
   </head>
   <body>
     <!-- HEADER -->
     <header class="ts-wrap-header">
       <div class="ts-header-info">
-        <div class="ts-header-info-clear">
-          <a
-            target="_blank"
-            rel="noopener noreferrer"
-            href="https://api.whatsapp.com/send?phone=+5989722-4499">
-            <img src="./img/icon-whatsapp.svg" alt="icon-whatsapp">
-            <span>+598 (97) 22-4499</span>
-          </a>
-          <span>
-            <img src="./img/icon-clock.svg" alt="icon-clock">
-            <span>MON - FRI 9AM - 6PM  GMT-3 </span>
-          </span>
-        </div>
-        <div class="ts-header-info-ext">
-          <a href="/" target="_blank" rel="noopener noreferrer">
-            <img src="./img/icon-in.svg" alt="icon-in">
-          </a>
-        </div>
+        <i class="material-icons">access_time</i>
+        <span>MON - FRI 9AM - 6PM  GMT-3</span>
       </div>
       <div class="ts-header-into">
         <img
@@ -44,20 +30,8 @@
             <li class="ts-header-item">
               <a href="/">Inicio</a>
             </li>
-            <li class="ts-header-item">
-              <a href="/">Soluciones BPO</a>
-            </li>
-            <li class="ts-header-item">
-              <a href="/">Software & Servicios</a>
-            </li>
-            <li class="ts-header-item">
-              <a href="/">Talento Sin Fronteras</a>
-            </li>
-            <li class="ts-header-item">
-              <a href="/">Acerca de Xtendo</a>
-            </li>
           </ul>
-          <button class="ts-header-button">Hablemos</button>
+          <a href="#form" class="ts-header-button">Hablemos</a>
         </nav>
         <button class="ts-menu-btn">
           <div class="ts-menu-btn__burger"></div>
@@ -83,36 +57,57 @@
         </article>
       </template>
 
-      <article class="ts-article-form">
-        <h2>¿Quiere saber más?</h2>
-        <form class="ts-form">
-          <div class="ts-form-field">
-            <label for="firstName">Nombre*</label>
-            <input placeholder="Nombre" type="text" id="firstName">
+      <article class="ts-article-form" id="form">
+        <section>
+          <h2>¿Quiere saber más?</h2>
+          <form class="ts-form">
+            <div class="ts-form-field">
+              <label for="firstName">Nombre*</label>
+              <input placeholder="Nombre" type="text" id="firstName">
+            </div>
+            <div class="ts-form-field">
+              <label for="lastName">Apellido*</label>
+              <input placeholder="Apellido" type="text" id="lastName">
+            </div>
+            <div class="ts-form-field">
+              <label for="emailBusiness">Correo Empresarial</label>
+              <input placeholder="Correo Empresarial" type="text" id="emailBusiness">
+            </div>
+            <div class="ts-form-field">
+              <label for="whatsapp">Whatsapp*</label>
+              <input placeholder="Whatsapp" type="text" id="whatsapp">
+            </div>
+            <div class="ts-form-field">
+              <label for="message">Mensaje*</label>
+              <textarea
+                rows="4"
+                id="message"
+                placeholder="¿Cómo podemos ayudarte?"></textarea>
+            </div>
+            <div class="ts-form-field">
+              <button type="submit">Enviar</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="ts-section-slider">
+          <div class="ts-slider">
+            <h2 class="ts-slider-title">Nuestra oficina</h2>
+            <ul class="ts-slider-nav">
+              <li class="ts-slider-item">
+                <p class="ts-slider-country">ARGENTINA</p>
+              </li>
+              <li class="ts-slider-item">
+                <i class="material-icons">location_on</i>
+                <p>Uruguay 1288 7-A CABA (1016)</p>
+              </li>
+              <li class="ts-slider-item">
+                <i class="material-icons">access_time</i>
+                <p>MON - FRI 9AM - 6PM  GMT-3</p>
+              </li>
+            </ul>
           </div>
-          <div class="ts-form-field">
-            <label for="lastName">Apellido*</label>
-            <input placeholder="Apellido" type="text" id="lastName">
-          </div>
-          <div class="ts-form-field">
-            <label for="emailBusiness">Correo Empresarial</label>
-            <input placeholder="Correo Empresarial" type="text" id="emailBusiness">
-          </div>
-          <div class="ts-form-field">
-            <label for="whatsapp">Whatsapp*</label>
-            <input placeholder="Whatsapp" type="text" id="whatsapp">
-          </div>
-          <div class="ts-form-field">
-            <label for="message">Mensaje*</label>
-            <textarea
-              rows="4"
-              id="message"
-              placeholder="¿Cómo podemos ayudarte?"></textarea>
-          </div>
-          <div class="ts-form-field">
-            <button type="submit">Enviar</button>
-          </div>
-        </form>
+        </section>
       </article>
     </main>
     <!-- END-MAIN -->
@@ -123,7 +118,7 @@
     <footer class="ts-footer">
       <div>
         <img
-          src="./img/logo.png"
+          src="./img/logo-white.png"
           class="ts-logo"
           alt="LOGO-TALENT-SOLUTIONS"
         />

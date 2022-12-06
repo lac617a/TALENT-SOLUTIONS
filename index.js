@@ -9,13 +9,14 @@ const handlePlainContent = (result) => {
     const p = document.createElement('p');
     const h2 = document.createElement('h2');
     const img = document.createElement('img');
-    const button = document.createElement('button');
+    const a = document.createElement('a');
     const ts_section = template.querySelectorAll('.ts-section');
     ts_section.forEach(node => node.innerHTML = '');
     
     h2.textContent = title;
     p.innerHTML = content;
-    button.textContent = b;
+    a.textContent = b;
+    a.href = `#form`;
     img.src = image;
     img.alt = `${id}-${title}`;
     
@@ -25,17 +26,17 @@ const handlePlainContent = (result) => {
         img.setAttribute('dir', 'ltr');
         img.classList.add('is-right');
         ts_section.item(0).appendChild(img);
-        ts_section.item(1).append(h2, p, button);
+        ts_section.item(1).append(h2, p, a);
       } else {
         img.setAttribute('dir', 'rtl');
         img.classList.add('is-left');
-        ts_section.item(0).append(h2, p, button);
+        ts_section.item(0).append(h2, p, a);
         ts_section.item(1).appendChild(img);
       }
     } else {
       img.setAttribute('dir', 'ltr');
       img.classList.add('is-right');
-      ts_section.item(0).append(h2, p, button);
+      ts_section.item(0).append(h2, p, a);
       ts_section.item(1).appendChild(img);
     }
     
@@ -72,7 +73,7 @@ const useElementOnScreen = (node, style, option = optionRoot) => {
 }
 
 const animated = () => {
-  const btn = document.querySelectorAll('.ts-section button');
+  const btn = document.querySelectorAll('.ts-section a');
   const ts_section = document.querySelectorAll('.ts-section img');
 
   ts_section.forEach(node => {
