@@ -445,7 +445,7 @@ main {
     z-index: 1;
 
     overflow: hidden;
-    clip-path: circle(30% at 100% -100%);
+    clip-path: circle(0% at 100% -100%);
     will-change: clip-path;
     transition: clip-path 300ms;
     box-shadow: 0 10px 10px -1px rgba(0, 0, 0, 0.5);
@@ -525,10 +525,6 @@ main {
 
 
 @media only screen and (max-width: 480px) {
-  .ts-header-navbar {
-    clip-path: circle(50% at 100% -100%);
-  }
-
   /* ============ MAIN ============ */
   .ts-hero h1 {
     font-size: 25px;
