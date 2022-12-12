@@ -1,3 +1,7 @@
+:root {
+  --color-primary: #00B2F3;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -19,7 +23,7 @@ a {
   transition: 300ms;
 }
 a:hover {
-  color: #E18E15 !important;
+  color: var(--color-primary) !important;
 }
 
 ul {
@@ -51,7 +55,7 @@ button, input, textarea {
 }
 
 .ts-header-info i {
-  color: #E18E15;
+  color: var(--color-primary);
 }
 
 .ts-header-into {
@@ -88,8 +92,8 @@ button, input, textarea {
 }
 
 .ts-header-button {
-  background: #00B2F3;
-  border: 1px solid #00B2F3;
+  background: var(--color-primary);
+  border: 1px solid var(--color-primary);
   padding: 14px;
   width: 200px;
   text-align: center;
@@ -102,9 +106,9 @@ button, input, textarea {
 }
 
 .ts-header-button:hover {
-  border: 1px solid #00B2F3;
+  border: 1px solid var(--color-primary);
   background: transparent;
-  color: #00B2F3 !important;
+  color: var(--color-primary) !important;
 }
 
 /* ============ END-HEADER ============ */
@@ -237,7 +241,7 @@ main {
 
 .ts-article .ts-section a:hover {
   color: #FDFDFD !important;
-  background: #00B2F3;
+  background: var(--color-primary);
   transform: scale(1.1);
 }
 
@@ -414,7 +418,7 @@ main {
 .ts-menu-btn .ts-menu-btn__burger {
   width: 22px;
   height: 2px;
-  background-color: #E18E15;
+  background-color: var(--color-primary);
   border-radius: 5px;
   transition: 0.5s;
 }
@@ -426,7 +430,7 @@ main {
   left: 0;
   width: 22px;
   height: 2px;
-  background-color: #E18E15;
+  background-color: var(--color-primary);
   border-radius: 5px;
   transition: 0.5s;
 }
@@ -484,7 +488,7 @@ main {
     font-size: 12px;
   }
   .ts-header-item:hover {
-    background-color: #E18E15;
+    background-color: var(--color-primary);
   }
   .ts-header-item:hover a {
     color: #FDFDFD !important;
